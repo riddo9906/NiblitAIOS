@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: NiblitCore
+Version: 0.1
+Summary: Core modules for Niblit AIOS
+Author: Riyaad Behardien
+Requires-Python: >=3.10
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary

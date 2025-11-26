@@ -1,0 +1,7 @@
+[32mclang[0m/stable 21.1.6 aarch64 [upgradable from: 21.1.5-1]
+[32mcommand-not-found[0m/stable 3.2-5 aarch64 [upgradable from: 3.2-4]
+[32mlibcompiler-rt[0m/stable 21.1.6 aarch64 [upgradable from: 21.1.5-1]
+[32mlibllvm[0m/stable 21.1.6 aarch64 [upgradable from: 21.1.5-1]
+[32mlibnghttp3[0m/stable 1.13.0 aarch64 [upgradable from: 1.12.0]
+[32mlld[0m/stable 21.1.6 aarch64 [upgradable from: 21.1.5-1]
+[32mllvm[0m/stable 21.1.6 aarch64 [upgradable from: 21.1.5-1]
