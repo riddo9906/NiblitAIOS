@@ -1,19 +1,35 @@
-# events.py
+# NiblitCore/events.py
+import threading
+from collections import defaultdict
+from .utils.logger import get_logger
 
-class EventBus:
+log = get_logger("Events")
+
+class EventEmitter:
     def __init__(self):
-        self.listeners = {}
+        self._subs = defaultdict(list)
+        self._lock = threading.Lock()
 
-    def on(self, event_name, callback):
-        if event_name not in self.listeners:
-            self.listeners[event_name] = []
-        self.listeners[event_name].append(callback)
+    def on(self, event_name: str, handler):
+        with self._lock:
+            self._subs[event_name].append(handler)
+        log.debug(f"Handler added to event '{event_name}'")
 
-    def emit(self, event_name, data=None):
-        if event_name in self.listeners:
-            for callback in self.listeners[event_name]:
-                callback(data)
+    def off(self, event_name: str, handler):
+        with self._lock:
+            try:
+                self._subs[event_name].remove(handler)
+            except ValueError:
+                pass
 
-# Global event bus instance
-events = EventBus()
+    def emit(self, event_name: str, payload=None):
+        handlers = list(self._subs.get(event_name, []))
+        log.debug(f"Emitting event '{event_name}' to {len(handlers)} handlers")
+        for h in handlers:
+            try:
+                h(payload)
+            except Exception as e:
+                log.exception(f"Event handler error for '{event_name}': {e}")
 
+# singleton
+events = EventEmitter()

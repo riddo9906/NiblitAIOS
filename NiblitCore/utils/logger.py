@@ -1,18 +1,18 @@
-# utils/logger.py
+# NiblitCore/utils/logger.py
 import logging
-from pathlib import Path
-from core_config import CoreConfig
+import sys
+import os
 
-CoreConfig.ensure_paths()
-LOG_FILE = CoreConfig.LOG_PATH / "niblit.log"
+def get_logger(name: str):
+    logger = logging.getLogger(name)
+    if logger.handlers:
+        return logger
 
-logging.basicConfig(
-    level=logging.DEBUG if CoreConfig.DEBUG else logging.INFO,
-    format="[%(asctime)s] [%(levelname)s] %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler(LOG_FILE, encoding="utf-8")
-    ]
-)
-
-logger = logging.getLogger("Niblit")
+    # basic console handler
+    log_level = os.environ.get("NIBLIT_LOG_LEVEL", "INFO").upper()
+    handler = logging.StreamHandler(sys.stdout)
+    fmt = logging.Formatter("[%(asctime)s] %(name)s %(levelname)s: %(message)s", "%H:%M:%S")
+    handler.setFormatter(fmt)
+    logger.addHandler(handler)
+    logger.setLevel(getattr(logging, log_level, logging.INFO))
+    return logger

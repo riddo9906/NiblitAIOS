@@ -1,35 +1,52 @@
-# registry.py
+# NiblitCore/registry.py
+import importlib.util
 import importlib
-import traceback
+import sys
+from types import ModuleType
+from .utils.logger import get_logger
+
+log = get_logger("ModuleRegistry")
 
 class ModuleRegistry:
     def __init__(self):
-        self.modules = {}
-        self.loaded = {}
+        self._modules = {}       # name -> module object or path
+        self._paths = {}         # name -> path
 
-    def register(self, name, module_path):
-        self.modules[name] = module_path
+    def register(self, name: str, path: str):
+        """Register a module by name and filesystem path or dotted name."""
+        self._paths[name] = path
+        log.debug(f"Registered module '{name}' -> '{path}'.")
 
-    def load(self, name):
-        if name not in self.modules:
-            raise Exception(f"Module '{name}' not registered.")
-
-        try:
-            module = importlib.import_module(self.modules[name])
-            if hasattr(module, "init_module"):
-                module.init_module()
-            self.loaded[name] = module
-            return module
-        except Exception as e:
-            print(f"[Registry] Failed to load {name}: {e}")
-            traceback.print_exc()
+    def load(self, name: str) -> ModuleType | None:
+        """Load module from path (filesystem) or dotted import path."""
+        path = self._paths.get(name)
+        if not path:
+            log.error(f"No registered path for module '{name}'")
             return None
 
-    def get(self, name):
-        return self.loaded.get(name)
+        # if path looks like a file, load from file
+        if path.endswith(".py"):
+            try:
+                spec = importlib.util.spec_from_file_location(name, path)
+                module = importlib.util.module_from_spec(spec)
+                sys.modules[name] = module
+                spec.loader.exec_module(module)
+                self._modules[name] = module
+                log.info(f"Loaded module file: {path}")
+                return module
+            except Exception as e:
+                log.exception(f"Failed to load module file '{path}': {e}")
+                return None
+        else:
+            # dotted import
+            try:
+                module = importlib.import_module(path)
+                self._modules[name] = module
+                log.info(f"Imported module: {path}")
+                return module
+            except Exception as e:
+                log.exception(f"Failed to import module '{path}': {e}")
+                return None
 
-    def unload(self, name):
-        if name in self.loaded:
-            if hasattr(self.loaded[name], "shutdown"):
-                self.loaded[name].shutdown()
-            del self.loaded[name]
+    def get(self, name: str):
+        return self._modules.get(name)

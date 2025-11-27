@@ -1,8 +1,10 @@
-# core.py
-
+# NiblitCore/core.py
 from .registry import ModuleRegistry
-from .config import config
 from .events import events
+from .config import config
+from .utils.logger import get_logger
+
+log = get_logger("NiblitCore")
 
 class NiblitCore:
     def __init__(self):
@@ -10,30 +12,30 @@ class NiblitCore:
         self.running = False
 
     def init(self):
-        print("[NiblitCore] Initializing core...")
-
-        # fire initialization event
+        log.info("Initializing NiblitCore...")
         events.emit("core_init", {"status": "starting"})
-
         self.running = True
 
     def load_module(self, name, path):
+        """Register + load a module by name and path."""
         self.registry.register(name, path)
         module = self.registry.load(name)
-
         if module:
-            print(f"[Core] Loaded module: {name}")
+            log.info(f"Loaded module: {name}")
+            events.emit("module_loaded", {"name": name})
+            return module
         else:
-            print(f"[Core] Failed to load module: {name}")
+            log.warning(f"Failed to load module: {name}")
+            return None
 
     def start(self):
-        print("[NiblitCore] Starting system...")
+        log.info("Starting NiblitCore...")
         events.emit("core_start", {"running": True})
 
     def shutdown(self):
-        print("[NiblitCore] Shutting down...")
+        log.info("Shutting down NiblitCore...")
         events.emit("core_shutdown", {})
         self.running = False
 
-# Global instance for system-wide access
+# exported singleton
 core = NiblitCore()

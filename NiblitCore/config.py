@@ -1,22 +1,14 @@
-# config.py
+# NiblitCore/config.py
+import os
 
-DEFAULT_CONFIG = {
-    "version": "0.1",
-    "debug": True,
-    "hardware_enabled": True,
-    "ai_enabled": True,
-    "storage_path": "/data/data/com.termux/files/home/NiblitAIOS/storage"
-}
-
-class Config:
+# Basic config object. Extend as needed.
+class _Config:
     def __init__(self):
-        self.data = DEFAULT_CONFIG.copy()
+        self.env = os.environ.get("NIBLIT_ENV", "development")
+        self.data_dir = os.environ.get("NIBLIT_DATA_DIR", os.path.expanduser("~/NiblitAIOS/data"))
+        self.log_level = os.environ.get("NIBLIT_LOG_LEVEL", "INFO")
+        self.debug = self.env == "development"
+        # add network, llm, persistence settings etc.
+        self.persistence_file = os.path.join(self.data_dir, "niblit_state.json")
 
-    def get(self, key, default=None):
-        return self.data.get(key, default)
-
-    def set(self, key, value):
-        self.data[key] = value
-
-# Global config instance
-config = Config()
+config = _Config()
