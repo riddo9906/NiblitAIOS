@@ -1,0 +1,759 @@
+Project Tree for: /data/data/com.termux/files/home/NiblitAIOS/Niblit-Modules
+
+├── .gitkeep
+├── GitHub
+│   ├── .git
+│   │   ├── FETCH_HEAD
+│   │   ├── HEAD
+│   │   ├── config
+│   │   ├── description
+│   │   ├── hooks
+│   │   │   ├── applypatch-msg.sample
+│   │   │   ├── commit-msg.sample
+│   │   │   ├── fsmonitor-watchman.sample
+│   │   │   ├── post-update.sample
+│   │   │   ├── pre-applypatch.sample
+│   │   │   ├── pre-commit.sample
+│   │   │   ├── pre-merge-commit.sample
+│   │   │   ├── pre-push.sample
+│   │   │   ├── pre-rebase.sample
+│   │   │   ├── pre-receive.sample
+│   │   │   ├── prepare-commit-msg.sample
+│   │   │   ├── push-to-checkout.sample
+│   │   │   ├── sendemail-validate.sample
+│   │   │   └── update.sample
+│   │   ├── index
+│   │   ├── info
+│   │   │   └── exclude
+│   │   ├── logs
+│   │   │   ├── HEAD
+│   │   │   └── refs
+│   │   │       ├── heads
+│   │   │       │   └── beta
+│   │   │       └── remotes
+│   │   │           ├── origin
+│   │   │           │   └── HEAD
+│   │   │           └── upstream
+│   │   │               ├── HEAD
+│   │   │               └── beta
+│   │   ├── objects
+│   │   │   ├── info
+│   │   │   └── pack
+│   │   │       ├── pack-5c146dd308726ad80f5f664e9a1d8f878489d1ba.idx
+│   │   │       ├── pack-5c146dd308726ad80f5f664e9a1d8f878489d1ba.pack
+│   │   │       └── pack-5c146dd308726ad80f5f664e9a1d8f878489d1ba.rev
+│   │   ├── packed-refs
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── beta
+│   │       ├── remotes
+│   │       │   ├── origin
+│   │       │   │   └── HEAD
+│   │       │   └── upstream
+│   │       │       ├── HEAD
+│   │       │       └── beta
+│   │       └── tags
+│   ├── .gitattributes
+│   ├── .github
+│   │   └── workflows
+│   │       ├── generator-generic-ossf-slsa3-publish.yaml
+│   │       └── pylint.yaml
+│   ├── .idea
+│   │   ├── .gitignore
+│   │   ├── caches
+│   │   │   └── deviceStreaming.xml
+│   │   ├── misc.xml
+│   │   ├── modules.xml
+│   │   ├── runConfigurations.xml
+│   │   └── vcs.xml
+│   ├── AI_Avatar_creator
+│   ├── ChatApp
+│   │   ├── ChatApp.txt
+│   │   ├── resources
+│   │   │   ├── __pycache__
+│   │   │   ├── autho.py
+│   │   │   ├── chat_app.py
+│   │   │   ├── chat_app_interface.py
+│   │   │   ├── chat_module.py
+│   │   │   ├── doodle.py
+│   │   │   ├── extra.py
+│   │   │   ├── service.py
+│   │   │   ├── spinner.py
+│   │   │   ├── update.py
+│   │   │   └── users.json
+│   │   └── users.json
+│   ├── Draegtile
+│   │   ├── Draegtile_Structure.txt
+│   │   ├── data
+│   │   │   └── users.json
+│   │   ├── main.py
+│   │   ├── modules
+│   │   │   ├── __pycache__
+│   │   │   ├── api.py
+│   │   │   ├── auth.py
+│   │   │   └── ui.py
+│   │   └── users.json
+│   ├── GitHub.iml
+│   ├── README.md
+│   ├── Scripts
+│   ├── Step by step common
+│   │   ├── Basic Github Commands.txt
+│   │   ├── Draegtile Air Humidifier.txt
+│   │   ├── Draegtile Bios.txt
+│   │   ├── Draegtile user.txt
+│   │   ├── Draegtile.txt
+│   │   ├── Guide to creating a programming extension module from programming code and a self-created module.txt
+│   │   ├── Guide to creating a programming extension.txt
+│   │   ├── Turning weather AI into an executable logic (python or Windows linuxmac.txt
+│   │   ├── basic folder structure for android studio.txt
+│   │   ├── step by step guide overview to .vsix files creation and basic coding logic.txt
+│   │   └── step by step widgit logic.txt
+│   ├── Steps
+│   │   ├── Basic Github Commands.txt
+│   │   ├── Draegtile Air Humidifier.txt
+│   │   ├── Draegtile Bios.txt
+│   │   ├── Draegtile user.txt
+│   │   ├── Draegtile.txt
+│   │   ├── Guide to creating a programming extension module from programming code and a self-created module.txt
+│   │   ├── Guide to creating a programming extension.txt
+│   │   ├── Step by step Guide to access GitHub repository using CMD.txt
+│   │   ├── Turning weather AI into an executable logic (python or Windows linuxmac.txt
+│   │   ├── basic folder structure for android studio.txt
+│   │   ├── step by step guide overview to .vsix files creation and basic coding logic.txt
+│   │   └── step by step widgit logic.txt
+│   ├── oahdn_env
+│   │   ├── bin
+│   │   │   ├── python
+│   │   │   ├── python3
+│   │   │   └── python3.11
+│   │   └── pyvenv.cfg
+│   └── openai
+│       ├── __init__.py
+│       ├── __main__.py
+│       ├── _base_client.py
+│       ├── _client.py
+│       ├── _compat.py
+│       ├── _constants.py
+│       ├── _exceptions.py
+│       ├── _extras
+│       │   ├── __init__.py
+│       │   ├── _common.py
+│       │   ├── numpy_proxy.py
+│       │   └── pandas_proxy.py
+│       ├── _files.py
+│       ├── _legacy_response.py
+│       ├── _models.py
+│       ├── _module_client.py
+│       ├── _qs.py
+│       ├── _resource.py
+│       ├── _response.py
+│       ├── _streaming.py
+│       ├── _types.py
+│       ├── _utils
+│       │   ├── __init__.py
+│       │   ├── _logs.py
+│       │   ├── _proxy.py
+│       │   ├── _reflection.py
+│       │   ├── _streams.py
+│       │   ├── _sync.py
+│       │   ├── _transform.py
+│       │   ├── _typing.py
+│       │   └── _utils.py
+│       ├── _version.py
+│       ├── cli
+│       │   ├── __init__.py
+│       │   ├── _api
+│       │   │   ├── __init__.py
+│       │   │   ├── _main.py
+│       │   │   ├── audio.py
+│       │   │   ├── chat
+│       │   │   │   ├── __init__.py
+│       │   │   │   └── completions.py
+│       │   │   ├── completions.py
+│       │   │   ├── files.py
+│       │   │   ├── image.py
+│       │   │   └── models.py
+│       │   ├── _cli.py
+│       │   ├── _errors.py
+│       │   ├── _models.py
+│       │   ├── _progress.py
+│       │   ├── _tools
+│       │   │   ├── __init__.py
+│       │   │   ├── _main.py
+│       │   │   ├── fine_tunes.py
+│       │   │   └── migrate.py
+│       │   └── _utils.py
+│       ├── lib
+│       │   ├── .keep
+│       │   ├── __init__.py
+│       │   ├── _old_api.py
+│       │   ├── _parsing
+│       │   │   ├── __init__.py
+│       │   │   └── _completions.py
+│       │   ├── _pydantic.py
+│       │   ├── _tools.py
+│       │   ├── _validators.py
+│       │   ├── azure.py
+│       │   └── streaming
+│       │       ├── __init__.py
+│       │       ├── _assistants.py
+│       │       ├── _deltas.py
+│       │       └── chat
+│       │           ├── __init__.py
+│       │           ├── _completions.py
+│       │           ├── _events.py
+│       │           └── _types.py
+│       ├── pagination.py
+│       ├── py.typed
+│       ├── resources
+│       │   ├── __init__.py
+│       │   ├── audio
+│       │   │   ├── __init__.py
+│       │   │   ├── audio.py
+│       │   │   ├── speech.py
+│       │   │   ├── transcriptions.py
+│       │   │   └── translations.py
+│       │   ├── batches.py
+│       │   ├── beta
+│       │   │   ├── __init__.py
+│       │   │   ├── assistants.py
+│       │   │   ├── beta.py
+│       │   │   ├── chat
+│       │   │   │   ├── __init__.py
+│       │   │   │   ├── chat.py
+│       │   │   │   └── completions.py
+│       │   │   ├── threads
+│       │   │   │   ├── __init__.py
+│       │   │   │   ├── messages.py
+│       │   │   │   ├── runs
+│       │   │   │   │   ├── __init__.py
+│       │   │   │   │   ├── runs.py
+│       │   │   │   │   └── steps.py
+│       │   │   │   └── threads.py
+│       │   │   └── vector_stores
+│       │   │       ├── __init__.py
+│       │   │       ├── file_batches.py
+│       │   │       ├── files.py
+│       │   │       └── vector_stores.py
+│       │   ├── chat
+│       │   │   ├── __init__.py
+│       │   │   ├── chat.py
+│       │   │   └── completions.py
+│       │   ├── completions.py
+│       │   ├── embeddings.py
+│       │   ├── files.py
+│       │   ├── fine_tuning
+│       │   │   ├── __init__.py
+│       │   │   ├── fine_tuning.py
+│       │   │   └── jobs
+│       │   │       ├── __init__.py
+│       │   │       ├── checkpoints.py
+│       │   │       └── jobs.py
+│       │   ├── images.py
+│       │   ├── models.py
+│       │   ├── moderations.py
+│       │   └── uploads
+│       │       ├── __init__.py
+│       │       ├── parts.py
+│       │       └── uploads.py
+│       ├── types
+│       │   ├── __init__.py
+│       │   ├── audio
+│       │   │   ├── __init__.py
+│       │   │   ├── speech_create_params.py
+│       │   │   ├── speech_model.py
+│       │   │   ├── transcription.py
+│       │   │   ├── transcription_create_params.py
+│       │   │   ├── translation.py
+│       │   │   └── translation_create_params.py
+│       │   ├── audio_model.py
+│       │   ├── audio_response_format.py
+│       │   ├── batch.py
+│       │   ├── batch_create_params.py
+│       │   ├── batch_error.py
+│       │   ├── batch_list_params.py
+│       │   ├── batch_request_counts.py
+│       │   ├── beta
+│       │   │   ├── __init__.py
+│       │   │   ├── assistant.py
+│       │   │   ├── assistant_create_params.py
+│       │   │   ├── assistant_deleted.py
+│       │   │   ├── assistant_list_params.py
+│       │   │   ├── assistant_response_format_option.py
+│       │   │   ├── assistant_response_format_option_param.py
+│       │   │   ├── assistant_stream_event.py
+│       │   │   ├── assistant_tool.py
+│       │   │   ├── assistant_tool_choice.py
+│       │   │   ├── assistant_tool_choice_function.py
+│       │   │   ├── assistant_tool_choice_function_param.py
+│       │   │   ├── assistant_tool_choice_option.py
+│       │   │   ├── assistant_tool_choice_option_param.py
+│       │   │   ├── assistant_tool_choice_param.py
+│       │   │   ├── assistant_tool_param.py
+│       │   │   ├── assistant_update_params.py
+│       │   │   ├── auto_file_chunking_strategy_param.py
+│       │   │   ├── chat
+│       │   │   │   └── __init__.py
+│       │   │   ├── code_interpreter_tool.py
+│       │   │   ├── code_interpreter_tool_param.py
+│       │   │   ├── file_chunking_strategy.py
+│       │   │   ├── file_chunking_strategy_param.py
+│       │   │   ├── file_search_tool.py
+│       │   │   ├── file_search_tool_param.py
+│       │   │   ├── function_tool.py
+│       │   │   ├── function_tool_param.py
+│       │   │   ├── other_file_chunking_strategy_object.py
+│       │   │   ├── static_file_chunking_strategy.py
+│       │   │   ├── static_file_chunking_strategy_object.py
+│       │   │   ├── static_file_chunking_strategy_param.py
+│       │   │   ├── thread.py
+│       │   │   ├── thread_create_and_run_params.py
+│       │   │   ├── thread_create_params.py
+│       │   │   ├── thread_deleted.py
+│       │   │   ├── thread_update_params.py
+│       │   │   ├── threads
+│       │   │   │   ├── __init__.py
+│       │   │   │   ├── annotation.py
+│       │   │   │   ├── annotation_delta.py
+│       │   │   │   ├── file_citation_annotation.py
+│       │   │   │   ├── file_citation_delta_annotation.py
+│       │   │   │   ├── file_path_annotation.py
+│       │   │   │   ├── file_path_delta_annotation.py
+│       │   │   │   ├── image_file.py
+│       │   │   │   ├── image_file_content_block.py
+│       │   │   │   ├── image_file_content_block_param.py
+│       │   │   │   ├── image_file_delta.py
+│       │   │   │   ├── image_file_delta_block.py
+│       │   │   │   ├── image_file_param.py
+│       │   │   │   ├── image_url.py
+│       │   │   │   ├── image_url_content_block.py
+│       │   │   │   ├── image_url_content_block_param.py
+│       │   │   │   ├── image_url_delta.py
+│       │   │   │   ├── image_url_delta_block.py
+│       │   │   │   ├── image_url_param.py
+│       │   │   │   ├── message.py
+│       │   │   │   ├── message_content.py
+│       │   │   │   ├── message_content_delta.py
+│       │   │   │   ├── message_content_part_param.py
+│       │   │   │   ├── message_create_params.py
+│       │   │   │   ├── message_deleted.py
+│       │   │   │   ├── message_delta.py
+│       │   │   │   ├── message_delta_event.py
+│       │   │   │   ├── message_list_params.py
+│       │   │   │   ├── message_update_params.py
+│       │   │   │   ├── refusal_content_block.py
+│       │   │   │   ├── refusal_delta_block.py
+│       │   │   │   ├── required_action_function_tool_call.py
+│       │   │   │   ├── run.py
+│       │   │   │   ├── run_create_params.py
+│       │   │   │   ├── run_list_params.py
+│       │   │   │   ├── run_status.py
+│       │   │   │   ├── run_submit_tool_outputs_params.py
+│       │   │   │   ├── run_update_params.py
+│       │   │   │   ├── runs
+│       │   │   │   │   ├── __init__.py
+│       │   │   │   │   ├── code_interpreter_logs.py
+│       │   │   │   │   ├── code_interpreter_output_image.py
+│       │   │   │   │   ├── code_interpreter_tool_call.py
+│       │   │   │   │   ├── code_interpreter_tool_call_delta.py
+│       │   │   │   │   ├── file_search_tool_call.py
+│       │   │   │   │   ├── file_search_tool_call_delta.py
+│       │   │   │   │   ├── function_tool_call.py
+│       │   │   │   │   ├── function_tool_call_delta.py
+│       │   │   │   │   ├── message_creation_step_details.py
+│       │   │   │   │   ├── run_step.py
+│       │   │   │   │   ├── run_step_delta.py
+│       │   │   │   │   ├── run_step_delta_event.py
+│       │   │   │   │   ├── run_step_delta_message_delta.py
+│       │   │   │   │   ├── run_step_include.py
+│       │   │   │   │   ├── step_list_params.py
+│       │   │   │   │   ├── step_retrieve_params.py
+│       │   │   │   │   ├── tool_call.py
+│       │   │   │   │   ├── tool_call_delta.py
+│       │   │   │   │   ├── tool_call_delta_object.py
+│       │   │   │   │   └── tool_calls_step_details.py
+│       │   │   │   ├── text.py
+│       │   │   │   ├── text_content_block.py
+│       │   │   │   ├── text_content_block_param.py
+│       │   │   │   ├── text_delta.py
+│       │   │   │   └── text_delta_block.py
+│       │   │   ├── vector_store.py
+│       │   │   ├── vector_store_create_params.py
+│       │   │   ├── vector_store_deleted.py
+│       │   │   ├── vector_store_list_params.py
+│       │   │   ├── vector_store_update_params.py
+│       │   │   └── vector_stores
+│       │   │       ├── __init__.py
+│       │   │       ├── file_batch_create_params.py
+│       │   │       ├── file_batch_list_files_params.py
+│       │   │       ├── file_create_params.py
+│       │   │       ├── file_list_params.py
+│       │   │       ├── vector_store_file.py
+│       │   │       ├── vector_store_file_batch.py
+│       │   │       └── vector_store_file_deleted.py
+│       │   ├── chat
+│       │   │   ├── __init__.py
+│       │   │   ├── chat_completion.py
+│       │   │   ├── chat_completion_assistant_message_param.py
+│       │   │   ├── chat_completion_chunk.py
+│       │   │   ├── chat_completion_content_part_image_param.py
+│       │   │   ├── chat_completion_content_part_param.py
+│       │   │   ├── chat_completion_content_part_refusal_param.py
+│       │   │   ├── chat_completion_content_part_text_param.py
+│       │   │   ├── chat_completion_function_call_option_param.py
+│       │   │   ├── chat_completion_function_message_param.py
+│       │   │   ├── chat_completion_message.py
+│       │   │   ├── chat_completion_message_param.py
+│       │   │   ├── chat_completion_message_tool_call.py
+│       │   │   ├── chat_completion_message_tool_call_param.py
+│       │   │   ├── chat_completion_named_tool_choice_param.py
+│       │   │   ├── chat_completion_role.py
+│       │   │   ├── chat_completion_stream_options_param.py
+│       │   │   ├── chat_completion_system_message_param.py
+│       │   │   ├── chat_completion_token_logprob.py
+│       │   │   ├── chat_completion_tool_choice_option_param.py
+│       │   │   ├── chat_completion_tool_message_param.py
+│       │   │   ├── chat_completion_tool_param.py
+│       │   │   ├── chat_completion_user_message_param.py
+│       │   │   ├── completion_create_params.py
+│       │   │   ├── parsed_chat_completion.py
+│       │   │   └── parsed_function_tool_call.py
+│       │   ├── chat_model.py
+│       │   ├── completion.py
+│       │   ├── completion_choice.py
+│       │   ├── completion_create_params.py
+│       │   ├── completion_usage.py
+│       │   ├── create_embedding_response.py
+│       │   ├── embedding.py
+│       │   ├── embedding_create_params.py
+│       │   ├── embedding_model.py
+│       │   ├── file_content.py
+│       │   ├── file_create_params.py
+│       │   ├── file_deleted.py
+│       │   ├── file_list_params.py
+│       │   ├── file_object.py
+│       │   ├── file_purpose.py
+│       │   ├── fine_tuning
+│       │   │   ├── __init__.py
+│       │   │   ├── fine_tuning_job.py
+│       │   │   ├── fine_tuning_job_event.py
+│       │   │   ├── fine_tuning_job_integration.py
+│       │   │   ├── fine_tuning_job_wandb_integration.py
+│       │   │   ├── fine_tuning_job_wandb_integration_object.py
+│       │   │   ├── job_create_params.py
+│       │   │   ├── job_list_events_params.py
+│       │   │   ├── job_list_params.py
+│       │   │   └── jobs
+│       │   │       ├── __init__.py
+│       │   │       ├── checkpoint_list_params.py
+│       │   │       └── fine_tuning_job_checkpoint.py
+│       │   ├── image.py
+│       │   ├── image_create_variation_params.py
+│       │   ├── image_edit_params.py
+│       │   ├── image_generate_params.py
+│       │   ├── image_model.py
+│       │   ├── images_response.py
+│       │   ├── model.py
+│       │   ├── model_deleted.py
+│       │   ├── moderation.py
+│       │   ├── moderation_create_params.py
+│       │   ├── moderation_create_response.py
+│       │   ├── moderation_model.py
+│       │   ├── shared
+│       │   │   ├── __init__.py
+│       │   │   ├── error_object.py
+│       │   │   ├── function_definition.py
+│       │   │   ├── function_parameters.py
+│       │   │   ├── response_format_json_object.py
+│       │   │   ├── response_format_json_schema.py
+│       │   │   └── response_format_text.py
+│       │   ├── shared_params
+│       │   │   ├── __init__.py
+│       │   │   ├── function_definition.py
+│       │   │   ├── function_parameters.py
+│       │   │   ├── response_format_json_object.py
+│       │   │   ├── response_format_json_schema.py
+│       │   │   └── response_format_text.py
+│       │   ├── upload.py
+│       │   ├── upload_complete_params.py
+│       │   ├── upload_create_params.py
+│       │   └── uploads
+│       │       ├── __init__.py
+│       │       ├── part_create_params.py
+│       │       └── upload_part.py
+│       └── version.py
+├── Niblit-apk
+│   ├── .git
+│   │   ├── HEAD
+│   │   ├── config
+│   │   ├── description
+│   │   ├── hooks
+│   │   │   ├── applypatch-msg.sample
+│   │   │   ├── commit-msg.sample
+│   │   │   ├── fsmonitor-watchman.sample
+│   │   │   ├── post-update.sample
+│   │   │   ├── pre-applypatch.sample
+│   │   │   ├── pre-commit.sample
+│   │   │   ├── pre-merge-commit.sample
+│   │   │   ├── pre-push.sample
+│   │   │   ├── pre-rebase.sample
+│   │   │   ├── pre-receive.sample
+│   │   │   ├── prepare-commit-msg.sample
+│   │   │   ├── push-to-checkout.sample
+│   │   │   ├── sendemail-validate.sample
+│   │   │   └── update.sample
+│   │   ├── index
+│   │   ├── info
+│   │   │   └── exclude
+│   │   ├── logs
+│   │   │   ├── HEAD
+│   │   │   └── refs
+│   │   │       ├── heads
+│   │   │       │   └── main
+│   │   │       └── remotes
+│   │   │           └── origin
+│   │   │               └── HEAD
+│   │   ├── objects
+│   │   │   ├── info
+│   │   │   └── pack
+│   │   │       ├── pack-7829882531a4dbbfe7786d5412e2cf24100e91f4.idx
+│   │   │       ├── pack-7829882531a4dbbfe7786d5412e2cf24100e91f4.pack
+│   │   │       └── pack-7829882531a4dbbfe7786d5412e2cf24100e91f4.rev
+│   │   ├── packed-refs
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── main
+│   │       ├── remotes
+│   │       │   └── origin
+│   │       │       └── HEAD
+│   │       └── tags
+│   ├── .github
+│   │   └── workflows
+│   │       └── build-niblit-aios.yml
+│   ├── Niblit
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── modules
+│   │   │   ├── __init__.py
+│   │   │   ├── analytics.py
+│   │   │   ├── antifraud.py
+│   │   │   ├── bios.py
+│   │   │   ├── bootloader.py
+│   │   │   ├── control_panel.py
+│   │   │   ├── counter_active_membrane.py
+│   │   │   ├── dashboard.py
+│   │   │   ├── device_manager.py
+│   │   │   ├── filesystem_manager.py
+│   │   │   ├── firmware.py
+│   │   │   ├── idea_generator.py
+│   │   │   ├── llm_adapter.py
+│   │   │   ├── llm_module.py
+│   │   │   ├── permission_manager.py
+│   │   │   ├── reflect.py
+│   │   │   ├── self-healer.py
+│   │   │   ├── self-teacher.py
+│   │   │   ├── self_idea_implementation.py
+│   │   │   ├── self_maintenance.py
+│   │   │   ├── slsa_generator.py
+│   │   │   ├── storage.py
+│   │   │   └── terminal_tools.py
+│   │   ├── niblit_core.py
+│   │   ├── niblit_net.py
+│   │   └── server.py
+│   ├── NiblitCore
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   └── core.py
+│   ├── NiblitCore.py
+│   ├── NiblitPro
+│   │   ├── __init__.py
+│   │   ├── core
+│   │   │   ├── __init__.py
+│   │   │   ├── knowledge_db.json
+│   │   │   ├── niblit_core.py
+│   │   │   ├── niblit_log.txt
+│   │   │   ├── one.py
+│   │   │   ├── realtime_collector.py
+│   │   │   └── weathercollector.py
+│   │   ├── folder_structure.py
+│   │   ├── main.py
+│   │   ├── module.py
+│   │   ├── modules
+│   │   │   ├── __init__.py
+│   │   │   ├── console_module.py
+│   │   │   ├── file_manager.py
+│   │   │   ├── futuristic_gui.py
+│   │   │   ├── news_module.py
+│   │   │   └── weather_module.py
+│   │   └── niblit_core.py
+│   ├── NiblitProV5
+│   │   ├── README.md
+│   │   ├── __init__.py
+│   │   ├── api
+│   │   │   └── query.py
+│   │   ├── generator.py
+│   │   ├── healer.py
+│   │   ├── main.py
+│   │   ├── main_headless.py
+│   │   ├── membrane.py
+│   │   ├── niblit_bridge.py
+│   │   ├── niblit_core.py
+│   │   ├── niblit_core_refactor.py
+│   │   ├── niblit_dashboard.py
+│   │   ├── niblit_memory.py
+│   │   ├── niblit_network.py
+│   │   ├── niblit_pro_v5_main.py
+│   │   ├── niblit_sensors.py
+│   │   ├── niblit_sky_factory.py
+│   │   ├── niblit_voice.py
+│   │   ├── requirements.txt
+│   │   ├── self_maintenance.py
+│   │   ├── slsa_generator.py
+│   │   └── trainer.py
+│   ├── README.md
+│   ├── __pycache__
+│   ├── auto_structure.py
+│   ├── buildozer.spec
+│   ├── collector.py
+│   ├── data
+│   │   └── training_queue.json
+│   ├── draegtile_network.json
+│   ├── generator.py
+│   ├── healer.py
+│   ├── main_headless.py
+│   ├── main_refactor.py
+│   ├── membrane.py
+│   ├── modules
+│   │   ├── __pycache__
+│   │   ├── github_integration.py
+│   │   ├── hf_adapter.py
+│   │   ├── llm_adapter.py
+│   │   ├── llm_module.py
+│   │   ├── niblit_bridge.py
+│   │   ├── openai_adapter.py
+│   │   ├── permission_manager.py
+│   │   ├── ssh_proxy.py
+│   │   ├── terminal_tools.py
+│   │   └── user_manager.py
+│   ├── niblit-core
+│   │   ├── __init__.py
+│   │   ├── memory.py
+│   │   ├── model_adaptors.py
+│   │   ├── niblit_core.py
+│   │   ├── prompts.py
+│   │   └── run.py
+│   ├── niblit_bridge.py
+│   ├── niblit_core.py
+│   ├── niblit_core_refactor.py
+│   ├── niblit_dashboard.py
+│   ├── niblit_memory
+│   │   └── niblit_memory.json
+│   ├── niblit_memory.json
+│   ├── niblit_memory.py
+│   ├── niblit_network.py
+│   ├── niblit_pro_v5_main.py
+│   ├── niblit_sensors.py
+│   ├── niblit_sky_factory.py
+│   ├── niblit_voice.py
+│   ├── niblit_web.py
+│   ├── requirements.txt
+│   ├── run_checks.sh
+│   ├── self_maintenance.py
+│   ├── server.py
+│   ├── slsa_generator.py
+│   ├── sync_github.py
+│   ├── trainer.py
+│   └── vercel.json
+└── niblit-vercel-fresh
+    ├── .git
+    │   ├── HEAD
+    │   ├── config
+    │   ├── description
+    │   ├── hooks
+    │   │   ├── applypatch-msg.sample
+    │   │   ├── commit-msg.sample
+    │   │   ├── fsmonitor-watchman.sample
+    │   │   ├── post-update.sample
+    │   │   ├── pre-applypatch.sample
+    │   │   ├── pre-commit.sample
+    │   │   ├── pre-merge-commit.sample
+    │   │   ├── pre-push.sample
+    │   │   ├── pre-rebase.sample
+    │   │   ├── pre-receive.sample
+    │   │   ├── prepare-commit-msg.sample
+    │   │   ├── push-to-checkout.sample
+    │   │   ├── sendemail-validate.sample
+    │   │   └── update.sample
+    │   ├── index
+    │   ├── info
+    │   │   └── exclude
+    │   ├── logs
+    │   │   ├── HEAD
+    │   │   └── refs
+    │   │       ├── heads
+    │   │       │   └── main
+    │   │       └── remotes
+    │   │           └── origin
+    │   │               └── HEAD
+    │   ├── objects
+    │   │   ├── info
+    │   │   └── pack
+    │   │       ├── pack-d07180f3d4f9ba60cf06505a7862887a698e3999.idx
+    │   │       ├── pack-d07180f3d4f9ba60cf06505a7862887a698e3999.pack
+    │   │       └── pack-d07180f3d4f9ba60cf06505a7862887a698e3999.rev
+    │   ├── packed-refs
+    │   └── refs
+    │       ├── heads
+    │       │   └── main
+    │       ├── remotes
+    │       │   └── origin
+    │       │       └── HEAD
+    │       └── tags
+    ├── .gitignore
+    ├── core
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   ├── main.py
+    │   ├── memory.py
+    │   └── self_evolve.py
+    ├── data
+    │   ├── __init__.py
+    │   ├── realtime.py
+    │   └── sources.py
+    ├── docs
+    │   ├── README.md
+    │   └── architecture.md
+    ├── engine
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   ├── autonomy.py
+    │   ├── logic.py
+    │   └── tasks.py
+    ├── hardware
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   └── device_detect.py
+    ├── integrations
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   ├── legacy_adapter.py
+    │   └── system_bridge.py
+    ├── legacy
+    │   ├── __init__.py
+    │   ├── hardware_scan.py
+    │   └── upgrade_paths.py
+    ├── nohup.out
+    ├── package-lock.json
+    ├── storage
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   ├── cache.py
+    │   └── db.py
+    ├── tests
+    │   ├── test_core.py
+    │   └── test_engine.py
+    └── ui
+        ├── __init__.py
+        ├── display.py
+        ├── interface.py
+        └── voice.py
